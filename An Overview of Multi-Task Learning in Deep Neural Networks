@@ -1,0 +1,11 @@
+# An Overview of Multi-Task Learning in Deep Neural Networks
+
+## MLT简介
+机器学习方法常常用于优化一个特定的Score函数，或者商业性质的KPI目标。在实际中，实现上述目标常常采用单一模型或者集成模型。然而在实际中我们优化预测的目标常常不值一个，在推荐领域，除了关心CTR指标，点赞、分享等行为也值得预测优化。这种利用优化多个目标的任务被称为多任务学习MTL。
+
+##深度神经网络中的MTL
+在神经网络中，有两种经典的MTL神经网络模型，分别是参数硬共享和参数软共享。
+参数硬共享指的是不同任务底层的特征网络共享参数，参数硬共享如下图所示：
+![png](https://github.com/yysys/paper_reading/blob/master/images/1.png)
+
+
