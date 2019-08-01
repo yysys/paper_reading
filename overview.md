@@ -20,3 +20,15 @@ MTL在一些任务上取得了不错的效果，下面是一些解释效果良�
 5.	MTL行为与正则化有些相似，有助于降低模型过拟合风险。<br>
 
 ## 最近的深度MTL神经网络
+在CV领域，卷积层通常用于提取图像特征，许多任务都会共享卷积层，而特定的任务由全连接层来表达。Long and Wang在2015年提出了用于CV领域学习的MTL网络，如下图所示：
+![png3](https://github.com/yysys/paper_reading/blob/master/images/3.png)
+另一方面，Lu等人于2016年提出了一种自下而上的方法，在训练的过程中为相似任务动态扩充参数。然而这种贪心方法难以发现全局最优点。
+![png4](https://github.com/yysys/paper_reading/blob/master/images/4.png)
+Misra等人于2016年提出一种参数软共享方法：交叉缝合。在网络中，交叉缝合单元实现参数交互。
+![png5](https://github.com/yysys/paper_reading/blob/master/images/5.png)
+在NLP领域，一些学者发现诸如part-of-speech tagging任务和NER任务能够共享底层参数表达。基于此，Hashimoto等人提出了一种联合训练网络用于各种NLP任务的学习。
+![png6](https://github.com/yysys/paper_reading/blob/master/images/6.png)
+以上是比较经典领域的网络，还有一些经典网络这里不一一例举了。
+## 总结
+MTL在CV、NLP、推荐等领域都有许多学者关注和研究。MTL在商业场景中有一定的应用和研究价值。
+
